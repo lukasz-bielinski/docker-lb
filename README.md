@@ -3,7 +3,7 @@
 
 Additional features:
 1) keepalived check if haproxy works on 127.0.0.1:60001(http check, status code 200) locally
-2) if dont't container runs docker-compose with haproxy image
+2) if dont't keeaplived runs haproxy process
 
 Basic Docker image to run keepalived on host and set additional ip on interface
 
