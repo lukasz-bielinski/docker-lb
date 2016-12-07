@@ -14,7 +14,7 @@ RUN chmod +x /bin/start-keepalived.sh \
     && add-apt-repository ppa:keepalived/stable \
     && add-apt-repository ppa:vbernat/haproxy-1.7 \
     && apt-get update \
-    && apt-get install rsyslog keepalived=$KEEPALIVED_VERSION haproxy=$HAPROXY_VERSION ssh\
+    && apt-get install rsyslog keepalived=$KEEPALIVED_VERSION haproxy=$HAPROXY_VERSION \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ \
