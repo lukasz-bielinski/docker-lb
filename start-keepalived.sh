@@ -22,7 +22,7 @@ sed -i -e "s/<--SMTPSERV-->/${SMTPSERV}/g" /etc/keepalived/keepalived.conf
 echo "=> Starting Keepalived ... : "
 
 echo "haproxy config"
-cat /haproxy.cfg
+cat /docker-lb/haproxy.cfg
 
 # ##logging to /var/log/syslog
 # service rsyslog start
