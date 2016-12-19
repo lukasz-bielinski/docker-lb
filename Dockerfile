@@ -3,7 +3,7 @@ MAINTAINER Lukasz Bielinski <l.bielinski@oberthur.com>
 
 
 ENV KEEPALIVED_VERSION=1:1.2.23~ubuntu16.04.1
-ENV HAPROXY_VERSION=1.7.0-1ppa1~xenial
+ENV HAPROXY_VERSION=1.7.1-1ppa1~xenial
 
 COPY start-keepalived.sh /bin/start-keepalived.sh
 COPY notifyscript.sh /bin/notifyscript.sh
