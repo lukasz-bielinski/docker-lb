@@ -2,7 +2,7 @@
 # Check if haproxy is running, return 1 if not.
 # Used by keepalived to initiate a failover in case haproxy is down
 
-HAPROXY_STATUS=$(curl --write-out %{http_code} --silent --output /dev/null 127.0.0.1:60001  -m 5 --connect-timeout 5 )
+HAPROXY_STATUS=$(curl --write-out %{http_code} --silent --output /dev/null 127.0.0.1:60001  -m 1 --connect-timeout 1 )
 
 if [ "$HAPROXY_STATUS" = "200" ]
 then
